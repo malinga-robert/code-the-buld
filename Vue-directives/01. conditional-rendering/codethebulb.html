@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../styles/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <title>Vue JS</title>
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="row txt-center">
+
+        
+        <div class="shine" v-if="notlighting">
+          <img src="/bulbs/unlite-bulb.png" alt="bulb_light"style="width: 400px;">
+        </div>
+  
+
+        <div class="dark"  v-else>
+          <img src="/bulbs/light-light-bulb-on-bulb-98192.png" alt="bulb_off" style="width: 400px;">
+        </div>
+       <br><br>
+       <button class="btn btn-primary" v-on:click="tap" style="width: 250px;" >
+        SWITCH BULB ON/OFF
+       </button>
+     
+
+      </div>
+    </div>
+  </div> 
+    
+    <script src="../../scripts/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="../../scripts/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
